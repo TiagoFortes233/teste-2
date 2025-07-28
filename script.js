@@ -1,15 +1,9 @@
 
-function irParaCarrinho() {
-    window.location.href = "carrinho.html";
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+    } else {
+        menu.classList.add("hidden");
+    }
 }
-
-const feedbacks = [
-    '"Camisolas top, chegou rápido!"',
-    '"Serviço ao cliente impecável."',
-    '"Recomendo muito, voltarei a comprar!"'
-];
-let i = 0;
-setInterval(() => {
-    document.getElementById("feedback-text").innerText = feedbacks[i];
-    i = (i + 1) % feedbacks.length;
-}, 4000);

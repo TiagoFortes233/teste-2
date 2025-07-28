@@ -2,20 +2,30 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Rei do Desporto</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="imagens/logo.png" alt="Logotipo" class="logo">
-            <h1>Rei do Desporto</h1>
+        <div class="top-bar">
+            <div class="logo-area">
+                <img src="img/logo.png" alt="Logo" class="logo"/>
+                <h1>Rei do Desporto</h1>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="img/user.png" alt="Login" class="icon"/></a>
+                <a href="#"><img src="img/cart.png" alt="Carrinho" class="icon"/></a>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            </div>
         </div>
-        <nav>
+        <nav id="menu" class="hidden">
             <ul>
-                <li><a href="#">Futebol</a>
+                <li>
+                    <span>Futebol</span>
                     <ul class="submenu">
                         <li><a href="#">Liga Portuguesa</a></li>
                         <li><a href="#">Liga Espanhola</a></li>
@@ -29,39 +39,17 @@
                 <li><a href="#">F1</a></li>
             </ul>
         </nav>
-        <div class="cart-icon" onclick="irParaCarrinho()">🛒</div>
     </header>
-
-    <section class="banner">
-        <h2>Bem-vindo ao Rei do Desporto!</h2>
-        <p>As melhores camisolas de futebol, NBA e F1.</p>
-    </section>
-
-    <section class="slideshow">
-        <h2>Mais Vendidas</h2>
-        <div class="slides">
-            <img src="imagens/produto1.jpg" alt="Produto 1">
-            <img src="imagens/produto2.jpg" alt="Produto 2">
-            <img src="imagens/produto3.jpg" alt="Produto 3">
-        </div>
-    </section>
-
-    <section class="suporte">
-        <h2>Suporte ao Cliente</h2>
-        <div class="qna">
-            <h3>Perguntas Frequentes</h3>
-            <p><strong>Como posso pagar?</strong><br>Por MB Way, transferência bancária ou cartão.</p>
-            <p><strong>Em quanto tempo recebo?</strong><br>Entre 3 a 5 dias úteis.</p>
-            <p><strong>Fazem trocas?</strong><br>Sim, no prazo de 14 dias.</p>
-        </div>
-    </section>
-
-    <a href="https://wa.me/351912345678" class="whatsapp-button" target="_blank">
-        <img src="imagens/whatsapp.png" alt="WhatsApp">
-    </a>
-
-    <div class="feedback-slider">
-        <p id="feedback-text">"Camisolas top, chegou rápido!"</p>
-    </div>
+    <main>
+        <div class="banner">Bem-vindo ao Rei do Desporto!</div>
+        <section class="mais-vendidos">
+            <h2>Mais Vendidos</h2>
+            <div class="slideshow">
+                <img src="img/produto1.jpg" alt="Produto 1"/>
+                <img src="img/produto2.jpg" alt="Produto 2"/>
+                <img src="img/produto3.jpg" alt="Produto 3"/>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
