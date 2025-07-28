@@ -1,55 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Rei do Desporto</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rei do Desporto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="logo-area">
-                <img src="img/logo.png" alt="Logo" class="logo"/>
-                <h1>Rei do Desporto</h1>
-            </div>
-            <div class="icons">
-                <a href="#"><img src="img/user.png" alt="Login" class="icon"/></a>
-                <a href="#"><img src="img/cart.png" alt="Carrinho" class="icon"/></a>
-                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            </div>
-        </div>
-        <nav id="menu" class="hidden">
-            <ul>
-                <li>
-                    <span>Futebol</span>
-                    <ul class="submenu">
-                        <li><a href="#">Liga Portuguesa</a></li>
-                        <li><a href="#">Liga Espanhola</a></li>
-                        <li><a href="#">Liga Alemã</a></li>
-                        <li><a href="#">Liga Francesa</a></li>
-                        <li><a href="#">Liga Inglesa</a></li>
-                        <li><a href="#">Resto do Mundo</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">NBA</a></li>
-                <li><a href="#">F1</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="banner">Bem-vindo ao Rei do Desporto!</div>
-        <section class="mais-vendidos">
-            <h2>Mais Vendidos</h2>
-            <div class="slideshow">
-                <img src="img/produto1.jpg" alt="Produto 1"/>
-                <img src="img/produto2.jpg" alt="Produto 2"/>
-                <img src="img/produto3.jpg" alt="Produto 3"/>
-            </div>
-        </section>
-    </main>
+  <header>
+    <div class="top-bar">
+      <div class="logo">👑 Rei do Desporto</div>
+      <div class="icons">
+        <button id="login-btn">Iniciar Sessão</button>
+        <a href="#" id="cart-icon">🛒<span id="cart-count">0</span></a>
+        <button id="menu-toggle">☰</button>
+      </div>
+    </div>
+    <nav id="side-menu" class="hidden">
+      <ul>
+        <li>
+          <span>Futebol</span>
+          <ul class="submenu">
+            <li><a href="#">Liga Portuguesa</a></li>
+            <li><a href="#">Liga Espanhola</a></li>
+            <li><a href="#">Liga Inglesa</a></li>
+            <li><a href="#">Liga Francesa</a></li>
+            <li><a href="#">Liga Alemã</a></li>
+            <li><a href="#">Resto do Mundo</a></li>
+          </ul>
+        </li>
+        <li><a href="nba.html">NBA</a></li>
+        <li><a href="f1.html">F1</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <h1>As Melhores Camisolas de Futebol</h1>
+      <p>Escolhe a tua paixão. Veste o teu clube.</p>
+    </section>
+    <section class="produtos">
+      <h2>Mais Vendidos</h2>
+      <div class="produto-lista">
+        <div class="produto">Benfica 23/24 <button onclick="adicionarCarrinho()">🛒</button></div>
+        <div class="produto">Real Madrid <button onclick="adicionarCarrinho()">🛒</button></div>
+        <div class="produto">Manchester City <button onclick="adicionarCarrinho()">🛒</button></div>
+        <div class="produto">LA Lakers <button onclick="adicionarCarrinho()">🛒</button></div>
+        <div class="produto">Ferrari F1 <button onclick="adicionarCarrinho()">🛒</button></div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
