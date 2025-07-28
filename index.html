@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rei do Desporto</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rei do Desporto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <div class="logo">👑 Rei do Desporto</div>
-      <div class="icons">
-        <button id="login-btn">Iniciar Sessão</button>
-        <a href="#" id="cart-icon">🛒<span id="cart-count">0</span></a>
-        <button id="menu-toggle">☰</button>
-      </div>
-    </div>
-    <nav id="side-menu" class="hidden">
-      <ul>
-        <li>
-          <span>Futebol</span>
-          <ul class="submenu">
-            <li><a href="#">Liga Portuguesa</a></li>
-            <li><a href="#">Liga Espanhola</a></li>
-            <li><a href="#">Liga Inglesa</a></li>
-            <li><a href="#">Liga Francesa</a></li>
-            <li><a href="#">Liga Alemã</a></li>
-            <li><a href="#">Resto do Mundo</a></li>
-          </ul>
-        </li>
-        <li><a href="nba.html">NBA</a></li>
-        <li><a href="f1.html">F1</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+    <header>
+        <div class="logo-area">
+            <img src="img/logo.png" alt="Logo" class="logo" />
+            <h1>Rei do Desporto</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="side-menu" class="hidden">
+            <ul>
+                <li class="dropdown">
+                    <span>Futebol</span>
+                    <ul class="submenu">
+                        <li><a href="#">Liga Portuguesa</a></li>
+                        <li><a href="#">Liga Espanhola</a></li>
+                        <li><a href="#">Liga Inglesa</a></li>
+                        <li><a href="#">Liga Francesa</a></li>
+                        <li><a href="#">Liga Alemã</a></li>
+                        <li><a href="#">Resto do Mundo</a></li>
+                    </ul>
+                </li>
+                <li><a href="nba.html">NBA</a></li>
+                <li><a href="f1.html">F1</a></li>
+            </ul>
+        </nav>
+        <div class="user-cart">
+            <a href="#"><img src="img/login.png" alt="Login" class="icon" /></a>
+            <a href="#"><img src="img/cart.png" alt="Carrinho" class="icon" /></a>
+        </div>
+    </header>
     <section class="banner">
-      <h1>As Melhores Camisolas de Futebol</h1>
-      <p>Escolhe a tua paixão. Veste o teu clube.</p>
+        <div class="banner-text">
+            <h2>As camisolas que movem paixões</h2>
+            <p>Veste a tua equipa com orgulho</p>
+        </div>
     </section>
-    <section class="produtos">
-      <h2>Mais Vendidos</h2>
-      <div class="produto-lista">
-        <div class="produto">Benfica 23/24 <button onclick="adicionarCarrinho()">🛒</button></div>
-        <div class="produto">Real Madrid <button onclick="adicionarCarrinho()">🛒</button></div>
-        <div class="produto">Manchester City <button onclick="adicionarCarrinho()">🛒</button></div>
-        <div class="produto">LA Lakers <button onclick="adicionarCarrinho()">🛒</button></div>
-        <div class="produto">Ferrari F1 <button onclick="adicionarCarrinho()">🛒</button></div>
-      </div>
-    </section>
-  </main>
+    <main>
+        <h3>Mais Vendidas</h3>
+        <div class="product-slider">
+            <div class="product">Produto 1</div>
+            <div class="product">Produto 2</div>
+            <div class="product">Produto 3</div>
+        </div>
+    </main>
+    <footer>
+        <div class="faq">
+            <h4>Perguntas Frequentes</h4>
+            <p>Como posso pagar?</p>
+            <p>Em quanto tempo recebo a encomenda?</p>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/351912345678" target="_blank">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
+            </a>
+        </div>
+        <div class="feedback-slide">
+            <p>“Entrega rápida e camisola impecável!”</p>
+        </div>
+    </footer>
 </body>
 </html>
