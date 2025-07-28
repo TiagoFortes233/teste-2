@@ -1,8 +1,9 @@
+
 function toggleMenu() {
-    const menu = document.getElementById('side-menu');
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'flex';
-    }
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+}
+function toggleSubMenu(id) {
+    const submenu = document.getElementById(id);
+    submenu.classList.toggle('hidden');
 }
